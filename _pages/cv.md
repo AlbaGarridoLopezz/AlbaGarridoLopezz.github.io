@@ -338,137 +338,280 @@ redirect_from:
   </div>
 </div>
 
+```html
 <!-- ── Summary ──────────────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
     <span class="cv-section-title">Summary</span>
     <div class="cv-section-line"></div>
   </div>
-  <p class="cv-summary"> Juan Parras is an Associate Professor (Profesor Contratado Doctor) at Universidad Politécnica de Madrid (UPM), where he has worked since 2015. He holds a PhD in Telecommunication Technologies and Systems (UPM, 2020, Cum Laude, International Mention), a Master's in Telecommunications Engineering (UPM, 2016, GPA 9.11, awarded for Excellent Academic Performance), and a Bachelor's in Telecommunication Technologies Engineering (Universidad de Jaén, 2014, GPA 9.59, Best Academic Record). </p>
-  <p class="cv-summary"> His research sits at the intersection of optimization (including optimal control and game theory) and statistical learning, with applications in AI for healthcare, secure communications, autonomous underwater navigation, and industry. His research has been funded by {{ all_projects | size }} funded projects, including {{ eu_projects | size }} European projects and {{ pi_projects | size }} projects where he is the Principal Investigator. His research results have been published in internationally recognized venues: to date, Juan has authored {{ all_pubs | size }} publications, including {{ journals | size }} journals ({{q1_pubs | size}} in JCR Q1 journals, {{q2_pubs | size}} in JCR Q2 journals) and {{conferences | size}} conference papers. Being commited to facilitate the replication and dissemination of his research results, his webpage contains the code for most of his research outputs. </p>
-  <p class="cv-summary"> Juan also plays a significant role in education. Since the 2018–2019 academic year, he has been teaching at UPM and was awarded an "Excellent" rating in the Docentia teaching evaluation in 2023. Additionally, he has mentored numerous young researchers, supervising {{ bachelor_theses | size }} Bachelor's and {{ master_theses | size }} Master's theses, several of which have led to publications in journals or conferences, as well as {{phd_theses | size}} PhD theses. </p>
-  <p class="cv-summary"> Regarding awards, Juan has received {{ awards_own | size }} distinctions, including the Best Signal Processing Thesis from the Spanish Chapter of IEEE in Communications and Signal Processing. He got also an accésit in the Luis Felipe Torrente divulgation award in medicine (2025). Finally, his students have also received {{awards_supervised | size}} awards. </p>
-</div>
 
+  <p class="cv-summary">
+    Alba Garrido López is a teaching assistant and Ph.D. candidate in the
+    Communications Technologies and Systems programme at Universidad Politécnica
+    de Madrid (UPM). She conducts her doctoral research within the Signal
+    Processing Applications Group (GAPS), under the supervision of
+    Dr. Juan Parras Moral.
+  </p>
+
+  <p class="cv-summary">
+    She holds a B.Sc. in Biomedical Engineering and an M.Sc. in Signal Theory
+    and Communications, with a specialization in Machine Learning for Big Data,
+    both from UPM. Prior to beginning her doctoral studies, she worked at
+    Hospital Universitario La Paz on the automatic segmentation of transcranial
+    ultrasound images using deep learning.
+  </p>
+
+  <p class="cv-summary">
+    Her current research focuses on artificial intelligence for personalized
+    medicine, particularly deep generative models, survival analysis, causal
+    inference, and synthetic data generation for multimodal biomedical data.
+  </p>
+
+  <div class="badge-row">
+    <span class="badge badge-area">Deep Generative Models</span>
+    <span class="badge badge-area">Survival Analysis</span>
+    <span class="badge badge-area">Synthetic Data Generation</span>
+    <span class="badge badge-area">Causal Inference</span>
+  </div>
+</div>
+```
+
+
+```html
 <!-- ── Education ────────────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
     <span class="cv-section-title">Education</span>
     <div class="cv-section-line"></div>
   </div>
+
   <div class="cv-list">
 
     <div class="cv-entry">
-      <div class="cv-entry-year">2016 – 2020</div>
+      <div class="cv-entry-year">2025 – Present</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">PhD in Telecommunication Technologies and Systems</p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a></p>
-        <p class="cv-entry-detail">Cum Laude · International Mention · Program: Communications Technologies and Systems</p>
-        <p class="cv-entry-detail">PhD Thesis: <a href="../files/2020-thesis.pdf">Adversarial detection games in network security applications with imperfect and incomplete information</a>, <a href="https://doi.org/10.20868/UPM.thesis.57986">DOI</a></p>
-      </div>
-    </div>
+        <p class="cv-entry-title">
+          Ph.D. in Communications Technologies and Systems
+        </p>
 
-    <div class="cv-entry">
-      <div class="cv-entry-year">2014 – 2016</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">Master's Degree in Telecommunications Engineering</p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a></p>
-        <p class="cv-entry-detail">GPA 9.11 · Excellence Mention</p>
-        <p class="cv-entry-detail">Master's Thesis: <a href="../files/2016-tfm.pdf">Development of an application based on dynamic game theory for designing optimal trajectories for two UAVs in a jamming problem</a></p>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-year">2023 – 2026</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">Master of Arts in Theology</p>
         <p class="cv-entry-sub">
-          <a href="https://kairos.edu/">Kairos</a> &amp;
-          <a href="https://tsr.de/">Theologische Seminar Rheinland</a>
+          <a href="https://www.upm.es/" target="_blank" rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Doctoral Programme in
+          <a href="https://ssr.upm.es/doctorado/" target="_blank" rel="noopener">
+            Communications Technologies and Systems
+          </a>
+        </p>
+
+        <p class="cv-entry-detail">
+          Supervisor: Dr. Juan Parras Moral ·
+          Signal Processing Applications Group (GAPS)
+        </p>
+
+        <p class="cv-entry-detail">
+          Research focus: artificial intelligence for personalized medicine,
+          deep generative models, survival analysis, causal inference, and
+          synthetic biomedical data.
         </p>
       </div>
     </div>
 
 
     <div class="cv-entry">
-      <div class="cv-entry-year">2010 – 2014</div>
+      <div class="cv-entry-year">2023 – 2025</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Bachelor's Degree in Telecommunication Technologies Engineering</p>
-        <p class="cv-entry-sub"><a href="https://www.ujaen.es/">Universidad de Jaén</a></p>
-        <p class="cv-entry-detail">GPA 9.59 · Best Academic Record · Tracks: Telecommunications Systems, Image and Sound · Erasmus: <a href="https://www.thm.de/site/">Technische Hochschule Mittelhessen</a> (Germany)</p>
-        <p class="cv-entry-detail">Bachelor's Thesis: <a href="../files/2014-tfg.pdf">Analysis and comparison of different indoor location methods</a></p>
+        <p class="cv-entry-title">
+          M.Sc. in Signal Theory and Communications
+        </p>
+
+        <p class="cv-entry-sub">
+          <a href="https://www.upm.es/" target="_blank" rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Specialization:
+          <a href="https://ssr.upm.es/mutsc/#itinerarioBD"
+             target="_blank"
+             rel="noopener">
+            Machine Learning for Big Data
+          </a>
+        </p>
+
+        <p class="cv-entry-detail">
+          GPA: 9.11 · Special Master's Degree Mention for Academic Excellence
+        </p>
+
+        <p class="cv-entry-detail">
+          Master's Thesis:
+          <em>
+            Design and Implementation of Variational Autoencoders for
+            Multimodal Survival Analysis in Medical Data
+          </em>
+          · Proposed for the Master's Thesis Honours Distinction
+        </p>
       </div>
     </div>
 
+
     <div class="cv-entry">
-      <div class="cv-entry-year">2012 – 2022</div>
+      <div class="cv-entry-year">2019 – 2023</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Bachelor's Degree in Theology</p>
-        <p class="cv-entry-sub"><a href="https://eetfieide.com/">Escuela Evangélica de Teología</a></p>
+        <p class="cv-entry-title">
+          B.Sc. in Biomedical Engineering
+        </p>
+
+        <p class="cv-entry-sub">
+          <a href="https://www.upm.es/Estudiantes/Estudios_Titulaciones/EstudiosOficialesGrado/ArticulosRelacionados?fmt=detail&amp;prefmt=articulo&amp;id=551d88ff1da0f210VgnVCM10000009c7648a____"
+             target="_blank"
+             rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Specialization: Bioengineering Devices and Materials, and Biomedical
+          Informatics
+        </p>
+
+        <p class="cv-entry-detail">
+          Bachelor's Thesis:
+          <em>
+            Design and Implementation of an Automatic Segmentation Algorithm
+            for Transcranial Ultrasound Images Applied to the Study of Movement
+            Disorders
+          </em>
+        </p>
       </div>
     </div>
 
   </div>
 </div>
-
-<!-- ── Work Experience ───────────────────────────────────────── -->
+```
+```html
+<!-- ── Work Experience ──────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
     <span class="cv-section-title">Work Experience</span>
     <div class="cv-section-line"></div>
   </div>
+
   <div class="cv-list">
 
     <div class="cv-entry">
-      <div class="cv-entry-year">2023 – Today</div>
+      <div class="cv-entry-year">Oct. 2025 – Present</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Associate Professor <span style="font-weight:300; color:#888">(Profesor Contratado Doctor)</span></p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>, Spain</p>
+        <p class="cv-entry-title">
+          Doctoral Researcher and Teaching Assistant
+          <span style="font-weight:300; color:#888">
+            (R1 Researcher)
+          </span>
+        </p>
+
+        <p class="cv-entry-sub">
+          <a href="https://www.upm.es/" target="_blank" rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Signal Processing Applications Group (GAPS), Escuela Técnica Superior
+          de Ingeniería de Telecomunicación
+        </p>
+
+        <p class="cv-entry-detail">
+          Research on artificial intelligence for personalized medicine as part
+          of a doctoral thesis.
+        </p>
       </div>
     </div>
 
+
     <div class="cv-entry">
-      <div class="cv-entry-year">2020 – 2023</div>
+      <div class="cv-entry-year">Feb. – Sep. 2025</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Assistant Professor <span style="font-weight:300; color:#888">(Profesor Ayudante Doctor)</span></p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>, Spain</p>
+        <p class="cv-entry-title">
+          Researcher
+          <span style="font-weight:300; color:#888">
+            (R1 Researcher)
+          </span>
+        </p>
+
+        <p class="cv-entry-sub">
+          <a href="https://www.upm.es/" target="_blank" rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Signal Processing Applications Group (GAPS), Escuela Técnica Superior
+          de Ingeniería de Telecomunicación
+        </p>
+
+        <p class="cv-entry-detail">
+          Application of artificial intelligence techniques to personalized
+          medicine.
+        </p>
       </div>
     </div>
 
+
     <div class="cv-entry">
-      <div class="cv-entry-year">2019 – 2020</div>
+      <div class="cv-entry-year">Oct. 2024 – Feb. 2025</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Teaching &amp; Research Assistant <span style="font-weight:300; color:#888">(Ayudante)</span></p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>, Spain</p>
+        <p class="cv-entry-title">
+          Research Fellow
+        </p>
+
+        <p class="cv-entry-sub">
+          <a href="https://www.upm.es/" target="_blank" rel="noopener">
+            Universidad Politécnica de Madrid
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Signal Processing Applications Group (GAPS), Escuela Técnica Superior
+          de Ingeniería de Telecomunicación
+        </p>
+
+        <p class="cv-entry-detail">
+          Analysis of multimodal medical data using deep learning methods.
+        </p>
       </div>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-year">2016 – 2019</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">PhD Candidate</p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>, Spain</p>
-      </div>
-    </div>
 
     <div class="cv-entry">
-      <div class="cv-entry-year">2015 – 2016</div>
+      <div class="cv-entry-year">Sep. – Dec. 2022</div>
       <div class="cv-entry-main">
-        <p class="cv-entry-title">Research Internship</p>
-        <p class="cv-entry-sub"><a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>, Spain</p>
-      </div>
-    </div>
+        <p class="cv-entry-title">
+          Research Intern
+        </p>
 
-    <div class="cv-entry">
-      <div class="cv-entry-year">2014</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">Research Internship</p>
-        <p class="cv-entry-sub"><a href="https://www.transmit.de/">Transmit GmbH</a>, Germany</p>
+        <p class="cv-entry-sub">
+          <a href="https://www.comunidad.madrid/hospital/lapaz/"
+             target="_blank"
+             rel="noopener">
+            Hospital Universitario La Paz
+          </a>, Spain
+        </p>
+
+        <p class="cv-entry-detail">
+          Development of deep-learning methods for the automatic segmentation
+          of transcranial ultrasound images.
+        </p>
       </div>
     </div>
 
   </div>
 </div>
+```
 
 <!-- ── Publications ──────────────────────────────────────────── -->
 <div class="cv-section">
@@ -536,39 +679,7 @@ redirect_from:
     Browse full project list →
   </a>
 </div>
-
-<!-- ── Research Stays ────────────────────────────────────────── -->
-<div class="cv-section">
-  <div class="cv-section-header">
-    <span class="cv-section-title">Research Stays</span>
-    <div class="cv-section-line"></div>
-  </div>
-  <div class="cv-list">
-
-    <div class="cv-entry">
-      <div class="cv-entry-year">2025</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">Postdoctoral Research Stay · 1.5 months</p>
-        <p class="cv-entry-sub">
-          <a href="https://www.icv.csic.es/" target="_blank" rel="noopener">Instituto de Cerámica y Vidrio</a>,
-          <a href="https://www.csic.es/es" target="_blank" rel="noopener">CSIC</a>, Spain
-        </p>
-      </div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-year">2018</div>
-      <div class="cv-entry-main">
-        <p class="cv-entry-title">Predoctoral Research Stay · 3.5 months</p>
-        <p class="cv-entry-sub">
-          <a href="https://lcas.lincoln.ac.uk/wp/" target="_blank" rel="noopener">Lincoln Centre for Autonomous Systems</a>,
-          <a href="https://www.lincoln.ac.uk/" target="_blank" rel="noopener">University of Lincoln</a>, United Kingdom
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
+ 
 
 <!-- ── Teaching ──────────────────────────────────────────────── -->
 <div class="cv-section">
@@ -637,32 +748,7 @@ redirect_from:
       {% endfor %}
     </div>
   </div>
-
-  <div class="teaching-section" style="margin-top: 1.4rem;">
-    <p class="teaching-section-label">Awards to students</p>
-    <div class="cv-list">
-      {% assign sorted_sup = awards_supervised | sort: "year" | reverse %}
-      {% for award in sorted_sup %}
-      <div class="award-entry">
-        <div class="award-year">{{ award.year }}</div>
-        <div class="cv-entry-main">
-          <p class="cv-entry-title">
-            {% if award.url %}<a href="{{ award.url }}" target="_blank" rel="noopener">{{ award.name }}</a>
-            {% else %}{{ award.name }}{% endif %}
-          </p>
-          {% if award.awarded_by %}
-          <p class="cv-entry-sub">{{ award.awarded_by }}</p>
-          {% endif %}
-          {% if award.description %}
-          <p class="cv-entry-detail">{{ award.description }}</p>
-          {% endif %}
-          <div class="badge-row">
-            <span class="badge badge-winner">{{ award.result | capitalize }}</span>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+   
   </div>
 
 </div>
