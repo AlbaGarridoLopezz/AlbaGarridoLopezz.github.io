@@ -22,7 +22,7 @@
 - name: "SYNTHIA: Synthetic data generation framework for integrated validation of use cases and AI healthcare applications"
   acronym: SYNTHIA
   funding_type: european
-  role: PI
+  role: Researcher
   area: [healthcare]
   url: "https://www.ihi.europa.eu/projects-results/project-factsheets/synthia"
   year_start: 2024
@@ -33,7 +33,7 @@
 - name: "REPO4EU: Precision drug REPurpOsing For EUrope and the world"
   acronym: REPO4EU
   funding_type: european
-  role: PI
+  role: Researcher
   area: [healthcare]
   doi: "https://doi.org/10.3030/101057619"
   year_start: 2022
@@ -41,111 +41,8 @@
   active: true
   description: "European platform for AI-driven drug repurposing combining knowledge graphs and machine learning across European health data."
 
-- name: "SYNTHEMA: Synthetic generation of hematological data over federated computing frameworks"
-  acronym: SYNTHEMA
-  funding_type: european
-  role: PI
-  area: [healthcare]
-  doi: "https://doi.org/10.3030/101095530"
-  year_start: 2022
-  year_end: 2026
-  active: true
-  description: "Federated learning and synthetic data generation to enable AI research on rare haematological diseases across European hospitals."
-
-- name: "SMAUG: Smart Maritime and Underwater Guardian"
-  acronym: SMAUG
-  funding_type: european
-  role: researcher
-  area: [navigation, communications]
-  doi: "https://doi.org/10.3030/101121129"
-  year_start: 2023
-  year_end: 2026
-  active: true
-
-- name: "GENOMED4ALL: Genomics and Personalized Medicine for all though Artificial Intelligence in Haematological Diseases"
-  acronym: GENOMED4ALL
-  funding_type: european
-  role: researcher
-  area: [healthcare]
-  doi: "https://doi.org/10.3030/101017549"
-  year_start: 2021
-  year_end: 2025
-  active: false
-  description: "Federated AI platform integrating genomic and clinical data across European centres for rare haematological disease research."
-
-# ── National projects ─────────────────────────────────────────────────────────
-
-- name: "NEMO4EX-AI: Heterogeneous underwater networks for collaborative, dynamic, and cost-effective exploration"
-  acronym: NEMO4EX-AI
-  funding_type: national
-  role: PI
-  area: [navigation, communications]
-  url: "https://www.robolabo.etsit.upm.es/projects/nemo/"
-  year_start: 2024
-  year_end: 2027
-  active: true
-  description: "AI-based techniques for oceanic cooperative robotics."
-
-- name: "NAUTILUS: Comportamientos colectivos y autónomos de AUVs"
-  acronym: NAUTILUS
-  funding_type: national
-  role: researcher
-  area: [navigation, communications]
-  year_start: 2021
-  year_end: 2025
-  active: false
-
-- name: "HERAKLES: Controlando las redes de comunicaciones electromagnéticas submarinas mediante despliegues autocontrolables"
-  acronym: HERAKLES
-  funding_type: national
-  role: researcher
-  area: [navigation, communications]
-  year_start: 2016
-  year_end: 2020
-  active: false
-
-- name: "UNDERWORLD: Radiocomunicaciones Optimizadas Submarinas usando Dispositivos Repetidores para Aplicaciones de Monitorización"
-  acronym: UNDERWORLD
-  funding_type: national
-  role: researcher
-  area: [navigation, communications]
-  year_start: 2014
-  year_end: 2016
-  active: false
-
-- name: "Comonsens Excellence Network"
-  acronym: COMONSENS
-  funding_type: national
-  role: researcher
-  area: [communications, security]
-  year_start: 2015
-  year_end: 2026
-  active: true
-  description: "Spanish national excellence network on signal processing and communications (2015-2017, 2020-2021, 2025-2026)."
-
-
 # ── Regional projects ──────────────────────────────────────────────────────────
 
-- name: "REACT: Espacio de datos y sistemas inteligentes de ayuda a la decisión para pandemias, con apoyo a personal
-sanitario, epidemiológico, investigador, autoridades sanitarias y pacientes - MadridDataSpace4Pandemics-CM"
-  acronym: REACT
-  funding_type: regional
-  role: PI
-  area: [healthcare]
-  year_start: 2020
-  year_end: 2022
-  active: false
-  description: "Regional Madrid project applying machine learning to pandemics decision support."
 
 # ── Other / Private ────────────────────────────────────────────────────────────
 
-- name: "NEVORA: Newtork-based Evaluation for On-Line Reliability Assessment of batteries"
-  acronym: NEVORA
-  funding_type: private
-  role: researcher
-  area: [energy]
-  url: "https://www.nevoraproject.com/"
-  year_start: 2025
-  year_end: null
-  active: true
-  description: "AI-based solid-state batteries diagnosis."

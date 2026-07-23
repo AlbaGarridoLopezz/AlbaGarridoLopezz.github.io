@@ -13,12 +13,12 @@
 #   description   : One-line context for non-specialist readers (optional)
 # =============================================================================
 
-- name: "Premio Luis Felipe Torrente de Divulgación sobre Medicina y Salud"
+- name: "Primer Premio Luis Felipe Torrente de Divulgación sobre Medicina y Salud"
   short_name: "Torrente Outreach Award"
-  result: finalist
-  year: 2025
+  result: WINNER
+  year: 2026
   awarded_by: "Fundación Lilly & The Conversation"
-  url: "https://doi.org/10.64628/AAO.sg74wnx9a"
+  url: "https://doi.org/10.64628/AAO.f3yshmpmw"
   category: outreach
   type: "own"
   description: "Divulgation article."

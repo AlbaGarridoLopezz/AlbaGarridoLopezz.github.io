@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Juan Parras"
+title                    : "Alba Garrido"
 title_separator          : "-"
-name                     : &name "Juan Parras"
-description              : &description "personal description"
-url                      : https://jparras.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Alba Garrido"
+description              : &description "Biomedical Engineer and Ph.D. candidate at UPM, researching on applied Artificial Intelligence for personalized medicine."
+url                      : https://AlbaGarridoLopezz.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "jparras/jparras.github.io"
+repository               : "AlbaGarridoLopezz/AlbaGarridoLopezz.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Juan Parras"
+  name             : "Alba Garrido"
   avatar           : "profile.png"
-  bio              : "Doctor in Telecommunications Engineering, teaching at UPM and researching on applied Artificial Intelligence and Signal Processing."
+  bio              : "Biomedical Engineer and Ph.D. candidate at UPM, teaching and researching on applied Artificial Intelligence for personalized medicine."
   location         : "Madrid"
   employer         : "UPM"
-  pubmed           : 
-  googlescholar    : "https://scholar.google.es/citations?user=AQcxu7MAAAAJ"
-  email            : "j.parras@upm.es"
+  pubmed           :
+  googlescholar    : "https://scholar.google.es/citations?user=yMo2cLIAAAAJ&hl=es" # NOTE: Using this ID consistently.
+  email            : "alba.garrido.lopez@upm.es"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : #"https://transparencia.upm.es/personal/pdi/cv?idpdi=a3a44e959ea2193acd260e3fcb55df3fffcf5e6ba1bbf712665775fe9c67b2e0"
   bitbucket        :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jparras"
+  github           : "AlbaGarridoLopezz"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : "juan-parras-6198b7141"
-  orcid            : "http://orcid.org/0000-0002-7028-3179"
+  linkedin         : "alba-garrido-lópez-b95403267"
+  orcid            : "https://orcid.org/0009-0006-7238-1473"
   pinterest        :
   soundcloud       :
   stackoverflow    : 
@@ -255,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Madrid # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

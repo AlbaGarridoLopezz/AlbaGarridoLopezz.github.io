@@ -1,698 +1,110 @@
 # =============================================================================
-# publications.yml — Single source of truth for all publications
+# publications.yml — Single source of truth for all publications and preprints
 # =============================================================================
 # Fields:
-#   title       : Full title of the work (required)
-#   authors     : Author string as it appears in citations (required)
-#   year        : Publication year, integer (required)
-#   type        : journal | conference | book | poster (required)
-#   quartile    : Q1 | Q2  (journals only)
-#   journal     : Journal name (journals/posters published in journals)
-#   venue       : Conference or workshop name (conferences/book chapters)
-#   impact_factor  : Numeric IF (journals only, year specified in metrics_year)
+#   title          : Full title of the work (required)
+#   authors        : Author string as it appears in citations (required)
+#   year           : Publication or preprint year, integer (required)
+#   type           : journal | conference | book | poster | preprint (required)
+#   status         : published | accepted | submitted | under_review | preprint
+#   quartile       : Q1 | Q2 (published journals only)
+#   journal        : Journal name
+#   venue          : Conference or workshop name
+#   submission_to  : Journal or conference where the manuscript was submitted
+#   preprint_server: arXiv | SSRN
+#   preprint_id    : Preprint identifier
+#   preprint       : Full URL to the preprint
+#   impact_factor  : Numeric IF (published journals only)
 #   metrics_year   : Year of the IF/ranking data
-#   metrics_detail : Full ranking string for display (optional)
-#   doi         : Full DOI URL
-#   scholar     : Google Scholar citation URL
-#   pdf         : Relative path to PDF (e.g. ../files/2026-joe.pdf)
-#   code        : GitHub or external code URL
-#   note        : Short annotation (Spotlight, Poster abstract, etc.)
-#   featured    : true | false  (flag for homepage highlights)
+#   metrics_detail : Full ranking string for display
+#   doi            : Full DOI URL
+#   scholar        : Google Scholar citation URL
+#   pdf            : Relative path to PDF
+#   code           : GitHub or external code URL
+#   note           : Short annotation
+#   featured       : true | false
 # =============================================================================
 
-# ── 2026 ─────────────────────────────────────────────────────────────────────
+
+# =============================================================================
+# 2026
+# =============================================================================
+
+# ── Published and accepted publications ──────────────────────────────────────
+
 - title: "Deep survival analysis in multimodal medical data: A parametric and probabilistic approach with competing risks"
   authors: "Garrido, A., Almodóvar, A., Apellániz, P. A., Zazo, S., & Parras, J."
   year: 2026
   type: journal
+  status: published
   quartile: Q1
   journal: "Scientific Reports"
   impact_factor: 4.9
   metrics_year: 2025
-  metrics_detail: "IF 4.9, Rank Q1 (Multidisciplinary Sciences: 85.4)"
+  metrics_detail: "IF 4.9, Q1 in Multidisciplinary Sciences (85.4 percentile)"
   doi: "https://doi.org/10.1038/s41598-026-57704-x"
   code: "https://github.com/AlbaGarridoLopezz/SAMVAE"
   scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:bEWYMUwI8FkC"
-
-- title: "The Geometry of Privacy: A Two-Stage Analysis of Generative Membership Inference in Federated Learning"
-  authors: "Arroyo Galende, B., Apellániz, P. A., Almodóvar, A., Uribe, S., Álvarez, F., & Parras, J."
-  year: 2026
-  type: journal
-  quartile: Q1
-  journal: "Big Data and Cognitive Computing"
-  impact_factor: 5.3
-  metrics_year: 2025
-  metrics_detail: "IF 5.3, Rank Q1 (83.9 in Computer Science: Theory and methods, 76.9 in Computer Science: Information systems)"
-  doi: "https://doi.org/10.3390/bdcc10050163"
-  pdf: "../files/2026-bdcc.pdf"
-  code: "https://github.com/BorjaArroyo/mia-fl"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:NaGl4SEjCO4C"
-
-- title: "Real-Time, Interpretable Diagnostics for Solid-State Batteries via Machine Learning on In Situ Impedance Spectra"
-  authors: "Warren, Z., Cuasquer, F., Sánchez, R., Apellániz, P. A., Almodóvar, A., Parras, J., & Rosero-Navarro, C."
-  year: 2026
-  type: journal
-  quartile: Q1
-  journal: "Battery Energy"
-  impact_factor: 11.1
-  metrics_year: 2025
-  metrics_detail: "IF 11.1, Rank Q1 (89.8 in Electrochemistry, 86.6 in Energy & Fuels, 85.9 in Materials Science: Multidisciplinary)"
-  doi: "https://doi.org/10.1002/bte2.70122"
-  pdf: "../files/2026-be.pdf"
-
-- title: "Attentive Neural Processes for Fast Trajectory Prediction in Underwater Acoustic Networks"
-  authors: "Fernández Salvador, F., Parras, J., & Zazo, S."
-  year: 2026
-  type: journal
-  quartile: Q1
-  journal: "IEEE Journal of Oceanic Engineering"
-  impact_factor: 5.6
-  metrics_year: 2025
-  metrics_detail: "IF 5.6, Rank Q1 (85.8 in Engineering: Civil, 80.6 in Engineering: Electrical & electronic, 86.1 in Engineering: Ocean, 93.3 in Oceanography)"
-  doi: "https://doi.org/10.1109/JOE.2025.3647846"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:GnPB-g6toBAC"
-  pdf: "../files/2026-joe.pdf"
-  code: "https://github.com/FernandoFS96/tesis/tree/c42b6b10f03a7c8f9f352fe8f8c7cae55069ab5a/underwater-localization"
-
-- title: "Advancing Cancer Research with Synthetic Data Generation in Low-Data Scenarios"
-  authors: "Apellániz, P. A., Arroyo Galende, B., Jiménez, A., Parras, J., & Zazo, S."
-  year: 2026
-  type: journal
-  quartile: Q1
-  journal: "IEEE Journal of Biomedical and Health Informatics"
-  impact_factor: 7.7
-  metrics_year: 2025
-  metrics_detail: "IF 7.7, Rank Q1 (91.5 in Computer Science: Information Systems, 85.7 in Computer Science: Interdisciplinary applications, 93.3 in Mathematical & Computational Biology, 88.0 in Medical Informatics)"
-  doi: "https://doi.org/10.1109/JBHI.2025.3595371"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:TFP_iSt0sucC"
-  pdf: "../files/2026-jbhi.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/medical_low_sample_generator"
-
-- title: "Enhancing Survival Analysis through Federated Learning in Non-IID and Scarce Data Scenarios"
-  authors: "Apellániz, P. A., Parras, J., & Zazo, S."
-  year: 2026
-  type: journal
-  quartile: Q1
-  journal: "Computers in Biology and Medicine"
-  impact_factor: 6.3
-  metrics_year: 2024
-  metrics_detail: "IF 6.3, Rank Q1 (93.9 in Biology, 85.6 in Computer Science: Interdisciplinary Applications, 82.7 in Engineering: Biomedical, 94.8 in Mathematical & Computational Biology)"
-  doi: "https://doi.org/10.1016/j.compbiomed.2026.111558"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:BqipwSGYUEgC"
-  pdf: "../files/2026-cbm.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/fed_savae"
-
-- title: "Optimizing AI Models for Haematological Malignancies with Federated Learning: Simulations and Experiments"
-  authors: "Carota, L., Casadei, F., Asti, G., Piscia, D., Biondi, R., Sala, C., et al."
-  year: 2026
-  type: poster
-  journal: "Physica Medica: European Journal of Medical Physics"
-  venue: "13º Congresso Nazionale AIFM"
-  doi: "https://doi.org/10.1016/j.ejmp.2025.105540"
-  scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:hMod-77fHWUC"
-  pdf: "../files/2026-physica.pdf"
-  note: "Poster abstract, published in Physica Medica"
-
-# ── 2025 ─────────────────────────────────────────────────────────────────────
-
-- title: "DeCaFlow: A Deconfounding Causal Generative Model"
-  authors: "Almodóvar, A., Javaloy, A., Parras, J., Zazo, S., & Valera, I."
-  year: 2025
-  type: conference
-  venue: "Neural Information Processing Systems (NeurIPS 2025)"
-  doi: "https://neurips.cc/virtual/2025/loc/san-diego/poster/116213"
-  scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:_Qo2XoVZTnwC"
-  pdf: "../files/2025-decaflow.pdf"
-  code: "https://github.com/aalmodovares/DeCaFlow"
-  note: "Spotlight"
   featured: true
 
-- title: "Experimenting Federated AI Models for Hematological Diseases"
-  authors: "Carota, L., Casadei, F., Asti, G., Piscia, D., Apellániz, P. A., D'Amico, S., et al."
-  year: 2025
+- title: "Trust-Aware Counterfactual Generation for Validating Causal Inference in Clinical Observational Data"
+  authors: "Almodóvar, A., Elizo, M., Garrido, A., Apellániz, P. A., Zazo, S., & Parras, J."
+  year: 2026
   type: conference
-  venue: "International Workshop on Artificial Intelligence for Biomedical Data (AIBio), Springer Nature Switzerland"
-  doi: "https://doi.org/10.1007/978-3-032-17216-7_2"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:NMxIlDl6LWMC"
+  status: accepted
+  note: "Accepted for publication"
+  featured: false
 
-- title: "Development and Validation of Synthetic Data Generation over a Federated Learning Computing Framework to Accelerate Innovation and Boost Personalized Medicine in Hematological Diseases"
-  authors: "Asti, G., Delleani, M., Apellániz, P. A., Isasa, I., Duarte, D. M., Galende, B. A., et al."
-  year: 2025
-  type: poster
-  journal: "Blood, The Journal of the American Society of Hematology"
-  venue: "67th ASH Annual Meeting"
-  doi: "https://doi.org/10.1182/blood-2025-4350"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:blknAaTinKkC"
-  pdf: "../files/2025-ash-platform.pdf"
-  note: "Poster abstract, published in Blood"
-
-- title: "Attentive Neural Processes for Few-Shot Learning Anomaly-Based Vessel Localization Using Magnetic Sensor Data"
-  authors: "Fernández Salvador, L. F., Vilallonga Tejela, B., Almodóvar, A., Parras, J., & Zazo, S."
-  year: 2025
-  type: journal
-  quartile: Q1
-  journal: "Journal of Marine Science and Engineering"
-  impact_factor: 3.2
-  metrics_year: 2025
-  metrics_detail: "IF 3.2, Rank Q1 (75.0 in Engineering: Marine, 75.4 in Oceanography)"
-  doi: "https://doi.org/10.3390/jmse13091627"
-  scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:k_IJM867U9cC"
-  pdf: "../files/2025-jmse.pdf"
-  code: "https://github.com/FernandoFS96/tesis/tree/c42b6b10f03a7c8f9f352fe8f8c7cae55069ab5a/magnetic-localization"
-
-- title: "Artificial Inductive Bias for Synthetic Tabular Data Generation in Data-Scarce Scenarios"
-  authors: "Apellániz, P. A., Jiménez, A., Arroyo Galende, B., Parras, J., & Zazo, S."
-  year: 2025
-  type: journal
-  quartile: Q1
-  journal: "Neurocomputing"
-  impact_factor: 6.7
-  metrics_year: 2025
-  metrics_detail: "IF 6.7, Rank Q1 (79.8 in Computer Science: Artificial Intelligence)"
-  doi: "https://doi.org/10.1016/j.neucom.2025.131122"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:ZeXyd9-uunAC"
-  pdf: "../files/2025-neurocom.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/low_sample_data_generator"
-
-- title: "Membership Inference Attacks and Differential Privacy: A Study within the Context of Generative Models"
-  authors: "Arroyo Galende, B., Apellániz, P. A., Parras, J., Zazo, S., & Uribe, S."
-  year: 2025
-  type: journal
-  quartile: Q1
-  journal: "IEEE Open Journal of the Computer Society"
-  impact_factor: 6.0
-  metrics_year: 2025
-  metrics_detail: "IF 6.0, Rank Q1 (88.0 in Computer Science: Theory and Methods, 83.9 in Engineering, Electrical & Electronic, 81.8 in Computer Science: Information systems, 85.8 in Computer Science: Hardware & architecture)"
-  doi: "https://doi.org/10.1109/OJCS.2025.3572244"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:j3f4tGmQtD8C"
-  pdf: "../files/2025-mia-ojcs.pdf"
-  code: "https://github.com/BorjaArroyo/mia-theoretical-foundations"
-
-- title: "Improving Synthetic Data Generation through Federated Learning in Scarce and Heterogeneous Data Scenarios"
-  authors: "Apellániz, P. A., Parras, J., & Zazo, S."
-  year: 2025
-  type: journal
-  quartile: Q1
-  journal: "Big Data and Cognitive Computing"
-  impact_factor: 5.3
-  metrics_year: 2025
-  metrics_detail: "IF 5.3, Rank Q1 (83.9 in Computer Science: Theory and methods, 76.9 in Computer Science: Information systems)"
-  doi: "https://doi.org/10.3390/bdcc9020018"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:e5wmG9Sq2KIC"
-  pdf: "../files/2025-bdcc.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/fed_vae"
-
-# ── 2024 ─────────────────────────────────────────────────────────────────────
-
-- title: "Survival Model Optimization via Federated Learning: A Study Combining Simulations and Experiments"
-  authors: "Casadei, F., Carota, L., Asti, G., D'Amico, S., Piscia, D., Zazo, S., et al."
-  year: 2024
+- title: "Interpretable Causal Survival Analysis with Kolmogorov-Arnold Networks"
+  authors: "Almodóvar, A., Garrido, A., Elizo, M., Apellániz, P. A., Zazo, S., & Parras, J."
+  year: 2026
   type: conference
-  venue: "2024 IEEE International Conference on Big Data (BigData)"
-  doi: "https://doi.org/10.1109/BigData62323.2024.10825368"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:R3hNpaxXUhUC"
+  status: accepted
+  venue: "IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)"
+  note: "Accepted conference paper"
+  featured: false
 
-- title: "GenoMed4All, a Federated Learning Platform for Clinical and Omics Data"
-  authors: "Piscia, D., Apellániz, P. A., Arroyo, B., Barrio, S., Moreno, F., Parras, J., et al."
-  year: 2024
-  type: poster
-  journal: "European Journal of Human Genetics"
-  venue: "European Human Genetics Conference"
-  doi: "https://doi.org/10.1038/s41431-024-01734-4"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4JMBOYKVnBMC"
-  note: "Poster abstract, published in European Journal of Human Genetics"
 
-- title: "An Artificial Intelligence-Based Federated Learning Platform to Boost Precision Medicine in Rare Hematological Diseases: An Initiative by GenoMed4All and Synthema Consortia"
-  authors: "Asti, G., D'Amico, S., Carota, L., Piscia, D., Casadei, F., Merleau, N. S. C., et al."
-  year: 2024
-  type: poster
-  journal: "Blood, The Journal of the American Society of Hematology"
-  venue: "66th ASH Annual Meeting"
-  doi: "https://doi.org/10.1182/blood-2024-205541"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:HDshCWvjkbEC"
-  pdf: "../files/2024-ash-geno.pdf"
-  note: "Poster abstract, published in Blood"
+# ── Preprints and manuscripts under review ───────────────────────────────────
 
-- title: "Data Driven Research through the European RADeep Registry and the Use of Artificial Intelligence towards Personalized Medicine in Sickle Cell Disease"
-  authors: "Gimbert, A. C., Reidel, S., Apellániz, P. A., Alvarez, F., Galende, B. A., Beneitez, D., et al."
-  year: 2024
-  type: poster
-  journal: "Blood, The Journal of the American Society of Hematology"
-  venue: "66th ASH Annual Meeting"
-  doi: "https://doi.org/10.1182/blood-2024-203331"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:TQgYirikUcIC"
-  pdf: "../files/2024-ash-scd.pdf"
-  note: "Poster abstract, published in Blood"
-
-- title: "Leveraging the Variational Bayes Autoencoder for Survival Analysis"
-  authors: "Apellániz, P. A., Parras, J., & Zazo, S."
-  year: 2024
-  type: journal
-  quartile: Q1
-  journal: "Scientific Reports"
-  impact_factor: 3.9
-  metrics_year: 2024
-  metrics_detail: "IF 3.9, Rank Q1 (81.9 in Multidisciplinary Sciences)"
-  doi: "https://doi.org/10.1038/s41598-024-76047-z"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:-f6ydRqryjwC"
-  pdf: "../files/2024-savae.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/savae"
-
-- title: "Deep Learning as a New Framework for Passive Vehicle Safety Design Using Finite Elements Models Data"
-  authors: "Lahoz Navarro, M., Jehle, J. S., Apellániz, P. A., Parras, J., Zazo, S., & Gerdts, M."
-  year: 2024
-  type: journal
-  quartile: Q2
-  journal: "Applied Sciences"
-  impact_factor: 2.5
-  metrics_year: 2024
-  metrics_detail: "IF 2.5, Rank Q2 (71.7 in Engineering, Multidisciplinary)"
-  doi: "https://doi.org/10.3390/app14209296"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:hC7cP41nSMkC"
-  pdf: "../files/2024-applsci.pdf"
-  code: "https://github.com/marlahozn/DL_for_vehicle_safety"
-
-- title: "Exploring UUV Development with NauSim: An Open-Source Simulation Platform"
-  authors: "Ortiz-Toro, C. A., Cerrada-Collado, C., Moreno-Salinas, D., Chaos-García, D., García-Suárez, K. L., Otero-Roth, P., et al."
-  year: 2024
-  type: conference
-  venue: "2024 Global Conference on Wireless and Optical Technologies (GCWOT), IEEE"
-  doi: "https://doi.org/10.1109/GCWOT63882.2024.10805602"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:RHpTSmoSYBkC"
-  pdf: "../files/2024-gcwot.pdf"
-
-- title: "CR-SAVAE: A Parametric Method for Survival Analysis with Competing Risks"
-  authors: "Apellániz, P. A., Parras, J., & Zazo, S."
-  year: 2024
-  type: conference
-  venue: "2024 32nd European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.23919/EUSIPCO63174.2024.10715431"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:IWHjjKOFINEC"
-  pdf: "../files/2024-eusipco-cr.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/cr-savae"
-
-- title: "An Improved Tabular Data Generator with VAE-GMM Integration"
-  authors: "Apellániz, P. A., Parras, J., & Zazo, S."
-  year: 2024
-  type: conference
-  venue: "2024 32nd European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.23919/EUSIPCO63174.2024.10715230"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:hFOr9nPyWt4C"
-  pdf: "../files/2024-eusipco-vae.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/vae-bgm_data_generator"
-
-- title: "NauSim: An Open Source Simulator for Underwater Drone Control, Development and Deployment"
-  authors: "Ortiz-Toro, C. A., Cerrada-Collado, C., Moreno-Salinas, D., Chaos-García, D., García-Suárez, K. L., Otero, P., Vidal-Pérez, J. M., Luque-Nieto, M. A., Vázquez, A. I., Fraile-Ardanuy, J. J., Negro-Valdecantos, V., Jimenez-Yguacel, E., Aranda-Almansa, J., Zazo-Bello, S., Zufiria, P. J., Magdalena, L., Parras, J., & Gutiérrez, A. L."
-  year: 2024
-  type: conference
-  venue: "XLV Jornadas de Automática"
-  doi: "https://doi.org/10.17979/ja-cea.2024.45.10895"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:mB3voiENLucC"
-  pdf: "../files/2024-ja.pdf"
-
-- title: "Synthetic Tabular Data Validation: A Divergence-Based Approach"
-  authors: "Apellániz, P. A., Jiménez, A., Arroyo Galende, B., Parras, J., & Zazo, S."
-  year: 2024
-  type: journal
-  quartile: Q2
-  journal: "IEEE Access"
-  impact_factor: 3.6
-  metrics_year: 2024
-  metrics_detail: "IF 3.6, Rank Q2 (64.1 in Computer Science: Information Systems, 65.2 in Engineering, Electrical & Electronic, 58.8 in Telecommunications)"
-  doi: "https://doi.org/10.1109/ACCESS.2024.3434582"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:dhFuZR0502QC"
-  pdf: "../files/2024-access.pdf"
-  code: "https://github.com/Patricia-A-Apellaniz/divergence_estimator"
-
-- title: "Explainable Drug Repurposing via Path Based Knowledge Graph Completion"
-  authors: "Jiménez, A., Merino, M. J., Parras, J., & Zazo, S."
-  year: 2024
-  type: journal
-  quartile: Q1
-  journal: "Scientific Reports"
-  impact_factor: 3.9
-  metrics_year: 2024
-  metrics_detail: "IF 3.9, Rank Q1 (81.9 in Multidisciplinary Sciences)"
-  doi: "https://doi.org/10.1038/s41598-024-67163-x"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:mVmsd5A6BfQC"
-  pdf: "../files/2024-srep.pdf"
-  code: "https://github.com/AnaJimBej/XG4Repo"
-
-- title: "Propensity Weighted Federated Learning for Treatment Effect Estimation in Distributed Imbalanced Environments"
-  authors: "Almodóvar, A., Parras, J., & Zazo, S."
-  year: 2024
-  type: journal
-  quartile: Q1
-  journal: "Computers in Biology and Medicine"
-  impact_factor: 6.3
-  metrics_year: 2024
-  metrics_detail: "IF 6.3, Rank Q1 (93.9 in Biology, 85.4 in Computer Science: Interdisciplinary Applications, 82.7 in Engineering: Biomedical, 94.8 in Mathematical & Computational Biology)"
-  doi: "https://doi.org/10.1016/j.compbiomed.2024.108779"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:L8Ckcad2t8MC"
-  pdf: "../files/2024-cbm.pdf"
-  code: "https://github.com/aalmodovares/federated_tedvae"
-
-- title: "MOSAIC: An Artificial Intelligence–Based Framework for Multimodal Analysis, Classification, and Personalized Prognostic Assessment in Rare Cancers"
-  authors: "D'Amico, S., et al."
-  year: 2024
-  type: journal
-  quartile: Q2
-  journal: "JCO Clinical Cancer Informatics"
-  impact_factor: 2.8
-  metrics_year: 2024
-  metrics_detail: "IF 2.8, Rank Q2 (51.1 in Oncology)"
-  doi: "https://doi.org/10.1200/CCI.24.00008"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:7PzlFSSx8tAC"
-  pdf: "../files/2024-jco.pdf"
-
-# ── 2023 ─────────────────────────────────────────────────────────────────────
-
-- title: "Federated Learning for Causal Inference Using Deep Generative Disentangled Models"
-  authors: "Almodóvar, A., Parras, J., & Zazo, S."
-  year: 2023
-  type: conference
-  venue: "1st Workshop on Deep Generative Models for Health, NeurIPS 2023"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Wp0gIr-vW9MC"
-  pdf: "../files/2023-nips.pdf"
-  code: "https://github.com/aalmodovares/federated_tedvae"
-
-- title: "The Relapsed Acute Lymphoblastic Leukemia Network (ReALLNet): A Multidisciplinary Project from the Spanish Society of Pediatric Hematology and Oncology (SEHOP)"
-  authors: "Velasco, P., et al."
-  year: 2023
-  type: journal
-  quartile: Q2
-  journal: "Frontiers in Pediatrics"
-  impact_factor: 2.1
-  metrics_year: 2023
-  metrics_detail: "IF 2.1, Rank Q2 (68.5 in Pediatrics)"
-  doi: "https://doi.org/10.3389/fped.2023.1269560"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:aqlVkmm33-oC"
-  pdf: "../files/2023-fped.pdf"
-
-- title: "Negotiation Strategies to Improve Distributed Power Allocation for Self-Organizing Heterogeneous Networks"
-  authors: "Parras, J., & Zazo, S."
-  year: 2023
-  type: conference
-  venue: "2023 31st European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.23919/EUSIPCO58844.2023.10290042"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4DMP91E08xMC"
-  pdf: "../files/2023-eusipco.pdf"
-  code: "https://github.com/jparras/ca_eusipco"
-
-- title: "DDQN-Based Optimal Targeted Therapy with Reversible Inhibitors to Combat the Warburg Effect"
-  authors: "Sanz-Nogales, J. M., Parras, J., & Zazo, S."
-  year: 2023
-  type: journal
-  quartile: Q2
-  journal: "Mathematical Biosciences"
-  impact_factor: 1.9
-  metrics_year: 2023
-  metrics_detail: "IF 1.9, Rank Q2 (52.8 in Biology)"
-  doi: "https://doi.org/10.1016/j.mbs.2023.109044"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:qxL8FJ1GzNcC"
-  pdf: "../files/2023-mbs.pdf"
-  code: "https://github.com/jsanno/ddqn"
-
-- title: "An Efficient Underwater Navigation Method Using MPC with Unknown Kinematics and Non-Linear Disturbances"
-  authors: "Barreno, P., Parras, J., & Zazo, S."
-  year: 2023
-  type: journal
-  quartile: Q1
-  journal: "Journal of Marine Science and Engineering"
-  impact_factor: 2.7
-  metrics_year: 2023
-  metrics_detail: "IF 2.7, Rank Q1 (78.0 in Engineering: Marine)"
-  doi: "https://doi.org/10.3390/jmse11040710"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:M3ejUd6NZC8C"
-  pdf: "../files/2023-jmse.pdf"
-  code: "https://github.com/jparras/mpc_linear"
-
-# ── 2022 ─────────────────────────────────────────────────────────────────────
-
-- title: "Inverse Reinforcement Learning: A New Framework to Mitigate an Intelligent Backoff Attack"
-  authors: "Parras, J., Almodóvar, A., Apellániz, P. A., & Zazo, S."
-  year: 2022
-  type: journal
-  quartile: Q1
-  journal: "IEEE Internet of Things Journal"
-  impact_factor: 10.6
-  metrics_year: 2022
-  metrics_detail: "IF 10.6, Rank Q1 (94.9 in Telecommunications, 97.8 in Computer Science: Information Systems, 95.5 in Engineering: Electrical and Electronic)"
-  doi: "https://doi.org/10.1109/JIOT.2022.3194694"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4TOpqqG69KYC"
-  pdf: "../files/2022-jiot.pdf"
-  code: "https://github.com/jparras/irl_attack"
+- title: "Not All Jensen-Shannon Divergence Estimators Are Equal"
+  authors: "Garrido, A., Almodóvar, A., Elizo, M., Apellániz, P. A., Zazo, S., & Parras, J."
+  year: 2026
+  type: preprint
+  status: under_review
+  submission_to: "NeurIPS 2026"
+  preprint_server: "arXiv"
+  preprint_id: "arXiv:2606.16411"
+  preprint: "https://arxiv.org/abs/2606.16411"
+  code: "https://github.com/AlbaGarridoLopezz/jensenshannondivergence"
+  note: "Submitted to NeurIPS 2026"
   featured: true
 
-- title: "Using a Deep Learning Algorithm to Improve the Results Obtained in the Recognition of Vessels Size and Trajectory Patterns in Shallow Areas Based on Magnetic Field Measurements Using Fluxgate Sensors"
-  authors: "Pérez, M., Parras, J., Zazo, S., Álvarez, I. A. P., & Lluch, M. d. M. S."
-  year: 2022
-  type: journal
-  quartile: Q1
-  journal: "IEEE Transactions on Intelligent Transportation Systems"
-  impact_factor: 8.5
-  metrics_year: 2022
-  metrics_detail: "IF 8.5, Rank Q1 (91.80 in Engineering, Electrical and Electronic, 97.5 in Engineering, Civil)"
-  doi: "https://doi.org/10.1109/TITS.2020.3036906"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:3fE2CSJIrl8C"
-  pdf: "https://accedacris.ulpgc.es/bitstream/10553/77790/2/09335965.pdf"
+- title: "Censoring-Aware Deep Learning for Patient-Level Causal Survival Analysis in Medical Data"
+  authors: "Almodóvar, A., Elizo, M., Benoit-Perejon, J. Z., Garrido, A., Apellániz, P. A., Zazo, S., & Parras, J."
+  year: 2026
+  type: preprint
+  status: preprint
+  preprint_server: "SSRN"
+  preprint_id: "SSRN 6877680"
+  preprint: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6877680"
+  note: "Available as an SSRN preprint"
+  featured: false
 
-- title: "An Online Learning Algorithm to Play Discounted Repeated Games in Wireless Networks"
-  authors: "Parras, J., Apellániz, P. A., & Zazo, S."
-  year: 2022
-  type: journal
-  quartile: Q1
-  journal: "Engineering Applications of Artificial Intelligence"
-  impact_factor: 8.0
-  metrics_year: 2022
-  metrics_detail: "IF 8.0, Rank Q1 (90.0 in Automation & Control Systems, 95.0 in Engineering: Multidisciplinary, 83.1 in Computer Science: Artificial Intelligence, 89.3 in Engineering: Electrical and Electronic)"
-  doi: "https://doi.org/10.1016/j.engappai.2021.104520"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YOwf2qJgpHMC"
-  pdf: "../files/2022-eaai.pdf"
-  code: "https://github.com/jparras/lewis"
 
-# ── 2021 ─────────────────────────────────────────────────────────────────────
+# =============================================================================
+# 2025
+# =============================================================================
 
-- title: "Deep Learning for Efficient and Optimal Motion Planning for AUVs with Disturbances"
-  authors: "Parras, J., Apellániz, P. A., & Zazo, S."
-  year: 2021
-  type: journal
-  quartile: Q2
-  journal: "Sensors"
-  impact_factor: 3.847
-  metrics_year: 2021
-  metrics_detail: "IF 3.847, Rank Q2 (71.09 in Instruments and Instrumentation, 65.76 in Engineering, Electrical and Electronic)"
-  doi: "https://doi.org/10.3390/s21155011"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Zph67rFs4hoC"
-  pdf: "../files/2021-sensors.pdf"
-  code: "https://github.com/jparras/dla_navigation"
+# ── Preprints and manuscripts under review ───────────────────────────────────
 
-- title: "Deep Reinforcement Learning for Attacking Wireless Sensor Networks"
-  authors: "Parras, J., Hüttenrauch, M., Zazo, S., & Neumann, G."
-  year: 2021
-  type: journal
-  quartile: Q2
-  journal: "Sensors"
-  impact_factor: 3.847
-  metrics_year: 2021
-  metrics_detail: "IF 3.847, Rank Q2 (71.09 in Instruments and Instrumentation, 65.76 in Engineering, Electrical and Electronic)"
-  doi: "https://doi.org/10.3390/s21124060"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:KlAtU1dfN6UC"
-  pdf: "../files/2021-sensors-deep.pdf"
-  code: "https://github.com/jparras/dla/tree/master"
-
-- title: "Robust Deep Reinforcement Learning for Underwater Navigation with Unknown Disturbances"
-  authors: "Parras, J., & Zazo, S."
-  year: 2021
-  type: conference
-  venue: "2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
-  doi: "https://doi.org/10.1109/ICASSP39728.2021.9414937"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:kNdYIx-mwKoC"
-  pdf: "../files/2021-icassp.pdf"
-  code: "https://github.com/jparras/robust_drl_navigation"
-
-# ── 2020 ─────────────────────────────────────────────────────────────────────
-
-- title: "The Threat of Intelligent Attackers Using Deep Learning: The Backoff Attack Case"
-  authors: "Parras, J., & Zazo, S."
-  year: 2020
-  type: book
-  venue: "Deep Learning Strategies for Security Enhancement in Wireless Sensor Networks (pp. 110–133). IGI Global"
-  doi: "https://doi.org/10.4018/978-1-7998-5068-7.ch006"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:MXK_kJrjxJIC"
-
-- title: "A Graph Network Model for Distributed Learning with Limited Bandwidth Links and Privacy Constraints"
-  authors: "Parras, J., & Zazo, S."
-  year: 2020
-  type: conference
-  venue: "2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
-  doi: "https://doi.org/10.1109/ICASSP40776.2020.9053067"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:8k81kl-MbHgC"
-  pdf: "../files/2020-icassp.pdf"
-  code: "https://github.com/jparras/gnn_limited_bandwidth"
-
-- title: "A Distributed Algorithm to Obtain Repeated Games Equilibria with Discounting"
-  authors: "Parras, J., & Zazo, S."
-  year: 2020
-  type: journal
-  quartile: Q1
-  journal: "Applied Mathematics and Computation"
-  impact_factor: 4.091
-  metrics_year: 2020
-  metrics_detail: "IF 4.091, Rank Q1 (97.55 in Mathematics: Applied)"
-  doi: "https://doi.org/10.1016/j.amc.2019.124785"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:UebtZRa9Y70C"
-  pdf: "../files/2020-amc.pdf"
-  code: "https://github.com/jparras/ca_algorithm"
-
-# ── 2019 ─────────────────────────────────────────────────────────────────────
-
-- title: "Repeated Game Analysis of a CSMA/CA Network under a Backoff Attack"
-  authors: "Parras, J., & Zazo, S."
-  year: 2019
-  type: journal
-  quartile: Q1
-  journal: "Sensors"
-  impact_factor: 3.275
-  metrics_year: 2019
-  metrics_detail: "IF 3.275, Rank Q1 (77.344 in Instruments and Instrumentation), Q2 (71.24 in Engineering, Electrical and Electronic)"
-  doi: "https://doi.org/10.3390/s19245393"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:5nxA0vEk-isC"
-  pdf: "../files/2019-sensors-rep.pdf"
-  code: "https://github.com/jparras/rga_csma"
-
-- title: "Using One Class SVM to Counter Intelligent Attacks against an SPRT Defense Mechanism"
-  authors: "Parras, J., & Zazo, S."
-  year: 2019
-  type: journal
-  quartile: Q1
-  journal: "Ad Hoc Networks"
-  impact_factor: 3.643
-  metrics_year: 2019
-  metrics_detail: "IF 3.643, Rank Q1 (75.321 in Computer Science: Information Systems)"
-  doi: "https://doi.org/10.1016/j.adhoc.2019.101946"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:eQOLeE2rZwMC"
-  pdf: "../files/2019-adhoc.pdf"
-  code: "https://github.com/jparras/svm_sprt"
-
-- title: "Deep Reinforcement Learning for Autonomous Model-Free Navigation with Partial Observability"
-  authors: "Tapia, D., Parras, J., & Zazo, S."
-  year: 2019
-  type: conference
-  venue: "2019 27th European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.23919/EUSIPCO.2019.8902933"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:0EnyYjriUFMC"
-  pdf: "../files/2019-eusipco-tapia.pdf"
-  code: "https://github.com/itsTAMART/UAV-RL-environment"
-
-- title: "Decentralized Multi-Agent Deep Reinforcement Learning in Swarms of Drones for Flood Monitoring"
-  authors: "Baldazo, D., Parras, J., & Zazo, S."
-  year: 2019
-  type: conference
-  venue: "2019 27th European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.23919/EUSIPCO.2019.8903067"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:hqOjcs7Dif8C"
-  pdf: "../files/2019-eusipco-baldazo.pdf"
-  code: "https://github.com/dabalda/drl_for_natural_disaster_monitoring"
-
-- title: "Model Free Localization with Deep Neural Architectures by Means of an Underwater WSN"
-  authors: "Parras, J., Zazo, S., Pérez-Álvarez, I. A., & Sanz González, J. L."
-  year: 2019
-  type: journal
-  quartile: Q1
-  journal: "Sensors"
-  impact_factor: 3.275
-  metrics_year: 2019
-  metrics_detail: "IF 3.275, Rank Q1 (77.344 in Instruments and Instrumentation), Q2 (71.24 in Engineering, Electrical and Electronic)"
-  doi: "https://doi.org/10.3390/s19163530"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:WF5omc3nYNoC"
-  pdf: "../files/2019-sensors.pdf"
-  code: "https://github.com/jparras/model_free_localization_wsn"
-
-- title: "Sequential Bayes Factor Testing: A New Framework for Decision Fusion"
-  authors: "Parras, J., & Zazo, S."
-  year: 2019
-  type: conference
-  venue: "20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC), IEEE"
-  doi: "https://doi.org/10.1109/SPAWC.2019.8815408"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Se3iqnhoufwC"
-  pdf: "../files/2019-spawc.pdf"
-  code: "https://github.com/jparras/sequential_bayes_factor"
-
-- title: "Learning Attack Mechanisms in Wireless Sensor Networks Using Markov Decision Processes"
-  authors: "Parras, J., & Zazo, S."
-  year: 2019
-  type: journal
-  quartile: Q1
-  journal: "Expert Systems with Applications"
-  impact_factor: 5.452
-  metrics_year: 2019
-  metrics_detail: "IF 5.452, Rank Q1 (84.926 in Computer Science: Artificial Intelligence, 88.158 in Engineering, Electrical and Electronic)"
-  doi: "https://doi.org/10.1016/j.eswa.2019.01.023"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YsMSGLbcyi4C"
-  pdf: "../files/2019-eswa.pdf"
-  code: "https://github.com/jparras/wsn_attack_mdp"
-
-# ── 2018 ─────────────────────────────────────────────────────────────────────
-
-- title: "Wireless Networks under a Backoff Attack: A Game Theoretical Perspective"
-  authors: "Parras, J., & Zazo, S."
-  year: 2018
-  type: journal
-  quartile: Q1
-  journal: "Sensors"
-  impact_factor: 3.031
-  metrics_year: 2018
-  metrics_detail: "IF 3.031, Rank Q1 (76.23 in Instruments and Instrumentation)"
-  doi: "https://doi.org/10.3390/s18020404"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:_FxGoFyzp5QC"
-  pdf: "../files/2018-sensors.pdf"
-  code: "https://github.com/jparras/backoff_attack_csma"
-
-# ── 2017 ─────────────────────────────────────────────────────────────────────
-
-- title: "Pursuit-Evasion Games: A Tractable Framework for Antijamming Games in Aerial Attacks"
-  authors: "Parras, J., Zazo, S., Del Val, J., Zazo, J., & Macua, S. V."
-  year: 2017
-  type: journal
-  quartile: Q2
-  journal: "EURASIP Journal on Wireless Communications and Networking"
-  impact_factor: 2.407
-  metrics_year: 2017
-  metrics_detail: "IF 2.407, Rank Q2 (62.5 in Engineering, Electrical and Electronic, 60.345 in Telecommunications)"
-  doi: "https://doi.org/10.1186/s13638-017-0857-8"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:LkGwnXOMwfcC"
-  pdf: "../files/2017-eurasip.pdf"
-  code: "https://github.com/jparras/pursuit_evasion"
-
-# ── 2016 ─────────────────────────────────────────────────────────────────────
-
-- title: "Optimal Attack and Defence of Large Scale Networks Using Mean Field Theory"
-  authors: "del Val, J., Zazo, S., Macua, S. V., Zazo, J., & Parras, J."
-  year: 2016
-  type: conference
-  venue: "24th European Signal Processing Conference (EUSIPCO), IEEE"
-  doi: "https://doi.org/10.1109/EUSIPCO.2016.7760393"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:W7OEmFMy1HYC"
-  pdf: "../files/2016-eusipco.pdf"
-
-- title: "A New Approach for Solving Anti-Jamming Games in Stochastic Scenarios as Pursuit-Evasion Games"
-  authors: "Parras, J., del Val, J., Zazo, S., Zazo, J., & Macua, S. V."
-  year: 2016
-  type: conference
-  venue: "IEEE Statistical Signal Processing Workshop (SSP) 2016"
-  doi: "https://doi.org/10.1109/SSP.2016.7551804"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:ufrVoPGSRksC"
-  pdf: "../files/2016-ssp.pdf"
-  code: "https://github.com/jparras/pursuit_evasion"
-
-# ── 2013 ─────────────────────────────────────────────────────────────────────
-
-- title: "Audio Restoration of Solo Guitar Excerpts Using an Excitation-Filter Instrument Model"
-  authors: "Parras-Moral, J., Canadas-Quesada, F., Vera-Candeas, P., & Ruiz-Reyes, N."
-  year: 2013
-  type: conference
-  venue: "Sound and Music Computing Conference 2013 (pp. 654–659). Logos Verlag"
-  doi: "https://doi.org/10.5281/zenodo.850220"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:roLk4NBRz8UC"
-  pdf: "../files/2013-smc.pdf"
+- title: "Interpretable Clinical Classification with Kolmogorov-Arnold Networks"
+  authors: "Almodóvar, A., Apellániz, P. A., Garrido, A., Fernández-Salvador, F., Zazo, S., & Parras, J."
+  year: 2025
+  type: preprint
+  status: preprint
+  preprint_server: "arXiv"
+  preprint_id: "arXiv:2509.16750"
+  preprint: "https://arxiv.org/abs/2509.16750"
+  note: "Available as an arXiv preprint"
+  featured: false

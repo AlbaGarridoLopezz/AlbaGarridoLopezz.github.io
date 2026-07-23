@@ -14,15 +14,6 @@
 #   description : Optional short description of the course content
 # =============================================================================
 
-- name: "Señales Aleatorias"
-  degree: "Grado en Ingeniería de Tecnologías y Sistemas de Telecomunicación"
-  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html"
-  university: "Universidad Politécnica de Madrid"
-  level: undergraduate
-  language: Spanish
-  year_start: 2020
-  year_end: null
-  active: true
 
 - name: "Reinforcement Learning"
   degree: "Master's Degree in Signal Theory and Communications"
@@ -30,7 +21,7 @@
   university: "Universidad Politécnica de Madrid"
   level: graduate
   language: English
-  year_start: 2018
+  year_start: 2026
   year_end: null
   active: true
 
@@ -40,19 +31,10 @@
   university: "Universidad Politécnica de Madrid"
   level: undergraduate
   language: Spanish
-  year_start: 2023
+  year_start: 2026
   year_end: null
   active: true
 
-- name: "Optimization Techniques for Big Data Analysis"
-  degree: "Master's Degree in Signal Theory and Communications"
-  degree_url: "https://ssr.upm.es/mutsc/"
-  university: "Universidad Politécnica de Madrid"
-  level: graduate
-  language: English
-  year_start: 2019
-  year_end: 2023
-  active: false
 
 - name: "Application Projects"
   degree: "Master's Degree in Signal Theory and Communications"
@@ -60,26 +42,17 @@
   university: "Universidad Politécnica de Madrid"
   level: graduate
   language: English
-  year_start: 2020
-  year_end: 2023
-  active: false
+  year_start: 2026
+  year_end: null
+  active: true
 
-- name: "Equipos y Sistemas Audiovisuales"
-  degree: "Grado en Ingeniería de Tecnologías y Sistemas de Telecomunicación"
-  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html"
-  university: "Universidad Politécnica de Madrid"
-  level: undergraduate
-  language: Spanish
-  year_start: 2019
-  year_end: 2021
-  active: false
 
-- name: "Producción Multimedia"
-  degree: "Grado en Ingeniería de Tecnologías y Sistemas de Telecomunicación"
-  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html"
+- name: "Probabilidad y Señales Aleatorias"
+  degree: "Grado en Ingeniería y Sistemas de Datos"
+  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-y-sistemas-de-datos.html"
   university: "Universidad Politécnica de Madrid"
-  level: undergraduate
+  level: graduate
   language: Spanish
-  year_start: 2018
-  year_end: 2020
-  active: false
+  year_start: 2025
+  year_end: null
+  active: true
