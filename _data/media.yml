@@ -1,34 +1,15 @@
 - year: 2026
-  title: "Científicos españoles enseñan a la IA a aprender del cáncer con pocos datos"
-  outlet: "La Razón"
-  url: "https://www.larazon.es/salud/investigadores-espanoles-ensenan-aprender-cancer-pocos-datos_202606046a21621fddbf36750d242afc.html"
-  topic: "Healthcare AI"
-  kind: "Digital news"
-
-- year: 2025
-  title: "¿Se fiaría del criterio de ChatGPT para su diagnóstico médico? Por si acaso, busque una segunda opinión"
+  title: "Algoritmos nómadas: el fin del aislamiento de las enfermedades raras"
   outlet: "The Conversation"
-  url: "https://theconversation.com/se-fiaria-del-criterio-de-chatgpt-para-su-diagnostico-medico-por-si-acaso-busque-una-segunda-opinion-260045"
+  url: "https://theconversation.com/algoritmos-nomadas-el-fin-del-aislamiento-de-las-enfermedades-raras-285713"
   topic: "Healthcare AI"
   kind: "Article"
 
-- year: 2025
-  title: "La UPM propone el aprendizaje federado contra el sesgo en la estimación de tratamientos"
-  outlet: "La Vanguardia"
-  url: "https://www.lavanguardia.com/vida/20250514/10681320/upm-propone-aprendizaje-federado-sesgo-estimacion-tratamientos-agenciaslv20250514.html"
-  topic: "Healthcare AI"
-  kind: "Digital news"
 
-- year: 2025
-  title: "Nuevo enfoque en seguridad pasiva de vehículos mediante inteligencia artificial"
-  outlet: "Estilo y salud"
-  url: "https://www.estiloysalud.es/noticia/11451/noticias/nuevo-enfoque-en-seguridad-pasiva-de-vehiculos-mediante-inteligencia-artificial.html"
-  topic: "AI applied to industry"
-  kind: "Digital news"
 
-- year: 2024
-  title: "Investigadores de la UPM logran predecir el uso de fármacos existentes en nuevas enfermedades"
-  outlet: "Telecinco"
-  url: "https://www.telecinco.es/noticias/ciencia-y-tecnologia/20241025/investigadores-upm-predecir-uso-farmacos-enfermedades-existentes_18_013822196.html"
+- year: 2026
+  title: "¿Cómo la Inteligencia artificial puede ayudar tratar las enfermedades raras?"
+  outlet: "La Vanguardia (México)"
+  url: "https://vanguardia.com.mx/vida/bienestar/como-la-inteligencia-artificial-puede-ayudar-tratar-las-enfermedades-raras-AJ22090220"
   topic: "Healthcare AI"
   kind: "Digital news"

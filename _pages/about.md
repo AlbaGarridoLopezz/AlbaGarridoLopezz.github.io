@@ -335,7 +335,7 @@ redirect_from:
 <div class="hero">
   <div class="hero-title">Applied AI research with impact</div>
   <div class="hero-subtitle">
-    Associate Professor at <a href="https://www.upm.es/" target="_blank" rel="noopener">UPM</a> working on machine learning, optimization, and signal processing for healthcare, autonomous systems, and industry.
+    Ph.D. candidate at <a href="https://www.upm.es/" target="_blank" rel="noopener">UPM</a> researching on applied Artificial Intelligence for personalized medicine.
   </div>
 
   <div class="hero-cta-row">

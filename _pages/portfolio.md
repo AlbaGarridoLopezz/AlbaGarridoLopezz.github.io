@@ -282,7 +282,7 @@ author_profile: true
 
       <div>
         <p class="code-title">
-          <a href="URL_DEL_REPOSITORIO_JS"
+          <a href="https://github.com/AlbaGarridoLopezz/jensenshannondivergence"
              target="_blank"
              rel="noopener">
             Jensen–Shannon Divergence Estimators
@@ -305,7 +305,7 @@ author_profile: true
         </div>
 
         <a class="code-link"
-           href="URL_DEL_REPOSITORIO_JS"
+           href="https://github.com/AlbaGarridoLopezz/jensenshannondivergence"
            target="_blank"
            rel="noopener">
 
