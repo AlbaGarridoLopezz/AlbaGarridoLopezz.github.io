@@ -2,27 +2,28 @@
 # teaching.yml — Single source of truth for all teaching activity
 # =============================================================================
 # Fields:
-#   name        : Course name (required)
-#   degree      : Full name of the degree programme (required)
-#   degree_url  : URL to the degree programme page
-#   university  : Institution (default: UPM)
-#   level       : undergraduate | graduate
-#   language    : Spanish | English
-#   year_start  : First year taught, integer (required)
-#   year_end    : Last year taught, integer — omit or set to null if ongoing
-#   active      : true | false  (true = currently teaching)
-#   description : Optional short description of the course content
+#   name          : Course name (required)
+#   degree        : Full name of the degree programme (required)
+#   degree_url    : URL to the degree programme page
+#   university    : Institution (default: UPM)
+#   level         : undergraduate | graduate
+#   language      : Spanish | English
+#   academic_year : Academic year in YYYY-YYYY format
+#   active        : true | false (true = currently teaching)
+#   description   : Optional short description of the course content
 # =============================================================================
 
 
-- name: "Reinforcement Learning"
-  degree: "Master's Degree in Signal Theory and Communications"
-  degree_url: "https://ssr.upm.es/mutsc/"
+# ── Academic year 2026–2027 ──────────────────────────────────────────────────
+
+- name: "Principios de Ingeniería de Telecomunicación"
+  short_name: "PING"
+  degree: "Grado en Ingeniería de Tecnologías de Telecomunicación"
+  degree_url: "https://www.upm.es/Estudiantes/Estudios_Titulaciones/EstudiosOficialesGrado/ArticulosRelacionados?prefmt=articulo&fmt=detail&id=CON09088"
   university: "Universidad Politécnica de Madrid"
-  level: graduate
-  language: English
-  year_start: 2026
-  year_end: null
+  level: undergraduate
+  language: Spanish
+  academic_year: "2026-2027"
   active: true
 
 - name: "Procesado Avanzado de Señales y Datos"
@@ -31,10 +32,8 @@
   university: "Universidad Politécnica de Madrid"
   level: undergraduate
   language: Spanish
-  year_start: 2026
-  year_end: null
+  academic_year: "2026-2027"
   active: true
-
 
 - name: "Application Projects"
   degree: "Master's Degree in Signal Theory and Communications"
@@ -42,17 +41,54 @@
   university: "Universidad Politécnica de Madrid"
   level: graduate
   language: English
-  year_start: 2026
-  year_end: null
+  academic_year: "2026-2027"
   active: true
-
 
 - name: "Probabilidad y Señales Aleatorias"
   degree: "Grado en Ingeniería y Sistemas de Datos"
   degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-y-sistemas-de-datos.html"
   university: "Universidad Politécnica de Madrid"
-  level: graduate
+  level: undergraduate
   language: Spanish
-  year_start: 2025
-  year_end: null
+  academic_year: "2026-2027"
   active: true
+
+
+# ── Academic year 2025–2026 ──────────────────────────────────────────────────
+
+- name: "Reinforcement Learning"
+  degree: "Master's Degree in Signal Theory and Communications"
+  degree_url: "https://ssr.upm.es/mutsc/"
+  university: "Universidad Politécnica de Madrid"
+  level: graduate
+  language: English
+  academic_year: "2025-2026"
+  active: false
+
+- name: "Procesado Avanzado de Señales y Datos"
+  degree: "Grado en Ingeniería y Sistemas de Datos"
+  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-y-sistemas-de-datos.html"
+  university: "Universidad Politécnica de Madrid"
+  level: undergraduate
+  language: Spanish
+  academic_year: "2025-2026"
+  active: false
+
+- name: "Application Projects"
+  degree: "Master's Degree in Signal Theory and Communications"
+  degree_url: "https://ssr.upm.es/mutsc/"
+  university: "Universidad Politécnica de Madrid"
+  level: graduate
+  language: English
+  academic_year: "2025-2026"
+  active: false
+
+- name: "Probabilidad y Señales Aleatorias"
+  degree: "Grado en Ingeniería y Sistemas de Datos"
+  degree_url: "https://www.etsit.upm.es/estudios/grado-en-ingenieria-y-sistemas-de-datos.html"
+  university: "Universidad Politécnica de Madrid"
+  level: undergraduate
+  language: Spanish
+  academic_year: "2025-2026"
+  active: false
+```

@@ -44,7 +44,7 @@
   metrics_detail: "IF 4.9, Q1 in Multidisciplinary Sciences (85.4 percentile)"
   doi: "https://doi.org/10.1038/s41598-026-57704-x"
   code: "https://github.com/AlbaGarridoLopezz/SAMVAE"
-  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:bEWYMUwI8FkC"
+  scholar: "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=yMo2cLIAAAAJ&citation_for_view=yMo2cLIAAAAJ:u-x6o8ySG0sC"
   featured: true
 
 - title: "Trust-Aware Counterfactual Generation for Validating Causal Inference in Clinical Observational Data"
@@ -75,7 +75,7 @@
   submission_to: "NeurIPS 2026"
   preprint_server: "arXiv"
   preprint_id: "arXiv:2606.16411"
-  preprint: "https://arxiv.org/abs/2606.16411"
+  doi: "https://arxiv.org/abs/2606.16411"
   code: "https://github.com/AlbaGarridoLopezz/jensenshannondivergence"
   note: "Submitted to NeurIPS 2026"
   featured: true
@@ -87,7 +87,7 @@
   status: preprint
   preprint_server: "SSRN"
   preprint_id: "SSRN 6877680"
-  preprint: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6877680"
+  doi: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6877680"
   note: "Available as an SSRN preprint"
   featured: false
 
@@ -105,6 +105,6 @@
   status: preprint
   preprint_server: "arXiv"
   preprint_id: "arXiv:2509.16750"
-  preprint: "https://arxiv.org/abs/2509.16750"
+  doi: "https://arxiv.org/abs/2509.16750"
   note: "Available as an arXiv preprint"
   featured: false

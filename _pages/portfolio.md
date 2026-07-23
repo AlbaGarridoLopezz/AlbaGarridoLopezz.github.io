@@ -121,64 +121,95 @@ author_profile: true
 
 <div class="code-page">
 
+<div class="code-page">
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- Teaching Codes and Contributions                                      -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+
 <div class="code-section">
   <div class="code-section-header">
-    <span class="code-section-title">Teaching Codes</span>
+    <span class="code-section-title">Teaching Codes and Contributions</span>
     <div class="code-section-line"></div>
   </div>
 
   <div class="code-list">
 
+    <!-- PASD contribution -->
     <div class="code-card">
-      <div class="code-tag">DRL</div>
+      <div class="code-tag">PASD</div>
+
       <div>
-        <p class="code-title"><a href="https://github.com/jparras/drl_classes" target="_blank" rel="noopener">Deep Reinforcement Learning Classes</a></p>
-        <p class="code-sub">Minimal implementations used for teaching in DRL courses.</p>
-        <ul class="code-items">
-          <li>Basic methods and examples to understand MDPs.</li>
-          <li>Classic RL: iterative methods, model-free tabular methods, linear approximations.</li>
-          <li>Model-free DRL: DDQN, VPG, A2C, TRPO, DDPG, SAC.</li>
-          <li>Model-based DRL: AlphaZero.</li>
-        </ul>
+        <p class="code-title">
+          <a href="https://github.com/jparras/dgm_classes/tree/main/videos"
+             target="_blank"
+             rel="noopener">
+            Deep Generative Models — Video Materials
+          </a>
+        </p>
+
+        <p class="code-sub">
+          Contribution to the audiovisual teaching materials for the
+          Procesado Avanzado de Señales y Datos course.
+        </p>
+
+        <p class="code-detail">
+          Educational resources on deep generative models.
+        </p>
+
         <div class="badge-row">
-          <span class="badge badge-teaching">Teaching</span>
+          <span class="badge badge-teaching">Teaching Contribution</span>
         </div>
-        <a class="code-link" href="https://github.com/jparras/drl_classes" target="_blank" rel="noopener">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          View on GitHub
+
+        <a class="code-link"
+           href="https://github.com/jparras/dgm_classes/tree/main/videos"
+           target="_blank"
+           rel="noopener">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+
+          View contribution
         </a>
       </div>
     </div>
 
-    <div class="code-card">
-      <div class="code-tag">DGM</div>
-      <div>
-        <p class="code-title"><a href="https://github.com/jparras/dgm_classes" target="_blank" rel="noopener">Deep Generative Models Classes</a></p>
-        <p class="code-sub">Minimal implementations used for teaching in DGM courses.</p>
-        <ul class="code-items">
-          <li>Simple models to understand the basic principles of generative modelling and classical sampling methods.</li>
-          <li>DGM models: VAE, GAN.</li>
-        </ul>
-        <div class="badge-row">
-          <span class="badge badge-teaching">Teaching</span>
-        </div>
-        <a class="code-link" href="https://github.com/jparras/dgm_classes" target="_blank" rel="noopener">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          View on GitHub
-        </a>
-      </div>
-    </div>
 
+    <!-- Application Projects -->
     <div class="code-card">
-      <div class="code-tag">Signals</div>
+      <div class="code-tag">APPR</div>
+
       <div>
-        <p class="code-title"><a href="https://github.com/jparras/salt" target="_blank" rel="noopener">Random Signals Teaching Codes</a></p>
-        <p class="code-sub">Codes used in the Random Signals course. Explanations in Spanish.</p>
+        <p class="code-title">
+          <a href="https://github.com/AlbaGarridoLopezz/Application-Projects-MUTSC"
+             target="_blank"
+             rel="noopener">
+            Application Projects — MUTSC
+          </a>
+        </p>
+
+        <p class="code-sub">
+          Teaching materials and practical resources for the Application
+          Projects course in the Master's Degree in Signal Theory and
+          Communications.
+        </p>
+
         <div class="badge-row">
           <span class="badge badge-teaching">Teaching</span>
         </div>
-        <a class="code-link" href="https://github.com/jparras/salt" target="_blank" rel="noopener">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+
+        <a class="code-link"
+           href="https://github.com/AlbaGarridoLopezz/Application-Projects-MUTSC"
+           target="_blank"
+           rel="noopener">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+
           View on GitHub
         </a>
       </div>
@@ -186,6 +217,11 @@ author_profile: true
 
   </div>
 </div>
+
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- Research Codes                                                         -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <div class="code-section">
   <div class="code-section-header">
@@ -195,35 +231,95 @@ author_profile: true
 
   <div class="code-list">
 
+    <!-- SAMVAE -->
     <div class="code-card">
-      <div class="code-tag">FL</div>
+      <div class="code-tag">SAMVAE</div>
+
       <div>
-        <p class="code-title"><a href="https://github.com/jparras/fed-baselines" target="_blank" rel="noopener">Federated Learning Baselines</a></p>
-        <p class="code-sub">Baseline implementations for federated learning research, including ADMM and BNN.</p>
+        <p class="code-title">
+          <a href="https://github.com/AlbaGarridoLopezz/SAMVAE"
+             target="_blank"
+             rel="noopener">
+            SAMVAE
+          </a>
+        </p>
+
+        <p class="code-sub">
+          Open-source implementation of a multimodal variational autoencoder
+          for survival analysis with competing risks.
+        </p>
+
+        <p class="code-detail">
+          Code associated with the article
+          “Deep Survival Analysis in Multimodal Medical Data:
+          A Parametric and Probabilistic Approach with Competing Risks.”
+        </p>
+
         <div class="badge-row">
           <span class="badge badge-research">Research</span>
+          <span class="badge badge-research">Open Source</span>
         </div>
-        <a class="code-link" href="https://github.com/jparras/fed-baselines" target="_blank" rel="noopener">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+
+        <a class="code-link"
+           href="https://github.com/AlbaGarridoLopezz/SAMVAE"
+           target="_blank"
+           rel="noopener">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+
           View on GitHub
         </a>
       </div>
     </div>
 
+
+    <!-- Jensen-Shannon estimators -->
     <div class="code-card">
-      <div class="code-tag">More</div>
+      <div class="code-tag">JSD</div>
+
       <div>
-        <p class="code-title"><a href="../publications">Research publication codes</a></p>
-        <p class="code-sub">Most research outputs include reproducibility code linked directly from each publication entry.</p>
+        <p class="code-title">
+          <a href="URL_DEL_REPOSITORIO_JS"
+             target="_blank"
+             rel="noopener">
+            Jensen–Shannon Divergence Estimators
+          </a>
+        </p>
+
+        <p class="code-sub">
+          Open-source package for the implementation and evaluation of
+          Jensen–Shannon divergence estimators for synthetic-data validation.
+        </p>
+
+        <p class="code-detail">
+          Code associated with the preprint
+          “Not All Jensen-Shannon Divergence Estimators Are Equal.”
+        </p>
+
         <div class="badge-row">
           <span class="badge badge-research">Research</span>
+          <span class="badge badge-research">Open Source</span>
         </div>
-        <a class="code-link" href="../publications">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Browse publications →
+
+        <a class="code-link"
+           href="URL_DEL_REPOSITORIO_JS"
+           target="_blank"
+           rel="noopener">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+
+          View on GitHub
         </a>
       </div>
     </div>
+
   </div>
 </div>
-</div><!-- /.code-page -->
+
+</div><!-- /.code-page --> 
