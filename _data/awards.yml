@@ -4,7 +4,7 @@
 # Fields:
 #   name          : Full award name (required)
 #   short_name    : Concise label for badges / cards (optional)
-#   result        : winner | runner-up | bronze | accesit | position (required)
+#   result        : winner | runner-up | bronze | accesit | finalist | nominated | position
 #   year          : Year awarded, integer (required)
 #   awarded_by    : Granting institution or body
 #   url           : Permanent link to award announcement or certificate (optional)
@@ -15,7 +15,7 @@
 
 - name: "Primer Premio Luis Felipe Torrente de Divulgación sobre Medicina y Salud"
   short_name: "Torrente Outreach Award"
-  result: WINNER
+  result: Winner
   year: 2026
   awarded_by: "Fundación Lilly & The Conversation"
   url: "https://doi.org/10.64628/AAO.f3yshmpmw"
@@ -23,119 +23,13 @@
   type: "own"
   description: "Divulgation article."
 
-- name: "Best PhD Thesis in Signal Processing"
-  short_name: "Best PhD Thesis"
-  result: winner
-  year: 2021
-  awarded_by: "Spanish Chapter of the IEEE in Signal Processing and Communications"
-  category: research
-  type: "own"
-  description: "National prize for the best doctoral dissertation in signal processing, awarded by the Spanish IEEE Chapter."
-
-- name: "Best Research Article — General Engineer D. Antonio Remón y Zarco del Valle Award"
-  short_name: "Best Research Article"
-  result: runner-up
-  year: 2021
-  awarded_by: "Cátedra CESEDEN-UPM"
-  category: research
-  type: "own"
-  description: "Runner-up recognition for the best research article in the Remón y Zarco del Valle awards."
-
-- name: "Defense Security Innovation Brokerage (DSIB)"
-  short_name: "DSIB"
-  result: "2nd position"
-  year: 2021
-  awarded_by: "Fundación FEINDEF"
-  category: research
-  type: "own"
-
-- name: "Best Master's Thesis — General Engineer D. Antonio Remón y Zarco del Valle Award"
-  short_name: "Best Master's Thesis"
-  result: winner
-  year: 2016
-  awarded_by: "Cátedra CESEDEN-UPM"
-  category: thesis
-  type: "own"
-  description: "First prize for best Master's thesis in the Remón y Zarco del Valle awards."
-
-- name: "Special Master's Degree Mention for Academic Excellence"
-  short_name: "Master's Excellence Mention"
-  result: winner
-  year: 2016
-  awarded_by: "Universidad Politécnica de Madrid"
-  category: academic
-  type: "own"
-  description: "Distinction awarded for outstanding academic performance during the Master's Degree in Telecommunications Engineering (GPA 9.11)."
-
-- name: "Best Academic Record — Bachelor's Degree"
-  short_name: "Best Academic Record"
-  result: winner
-  year: 2014
-  awarded_by: "Universidad de Jaén"
-  category: academic
-  type: "own"
-  description: "Distinction for the best overall academic record in the Bachelor's Degree in Telecommunication Technologies Engineering (GPA 9.59)."
-
-- name: "National Physics Olympics"
-  short_name: "National Physics Olympics"
-  result: bronze
-  year: 2010
-  awarded_by: "Real Sociedad Española de Física"
-  category: academic
-  type: "own"
-
-- name: "Regional Physics Olympics"
-  short_name: "Regional Physics Olympics"
-  result: winner
-  year: 2010
-  awarded_by: "Real Sociedad Española de Física"
-  category: academic
-  type: "own"
-
-- name: "Regional Mathematics Olympics"
-  short_name: "Regional Mathematics Olympics"
-  result: bronze
-  year: 2010
-  awarded_by: "Real Sociedad Matemática Española"
-  category: academic
-  type: "own"
-
-- name: "Local and Regional Mathematics Olympics"
-  short_name: "Mathematics Olympics"
-  result: winner
-  year: 2008
-  awarded_by: "Various"
-  category: academic
-  type: "own"
-  description: "Multiple prizes at local and regional level between 2006 and 2009 (SAEM Thales, GARASA, IES Torre Olvidada)."
-
-# ── Supervised student awards ─────────────────────────────────────────────────
-# Awards won by supervised students, attributable to mentoring activity.
-
-- name: "Premio Luis Felipe Torrente de Divulgación sobre Medicina y Salud"
-  short_name: "Torrente Outreach Award"
-  result: winner
-  year: 2026
-  awarded_by: "Fundación Lilly & The Conversation"
-  url: "https://doi.org/10.64628/AAO.f3yshmpmw"
-  category: outreach
-  type: "supervised"
-  description: "Best divulgation article."
-
-- name: "Best PhD Thesis in International cooperation for sustainable Human Development"
-  short_name: "Best PhD Thesis (supervised)"
-  result: accesit
+- name: "Proposed for the Master's Thesis Honours Distinction"
+  short_name: "Master's Thesis Honours Proposal"
+  result: Proposed
   year: 2025
   awarded_by: "Universidad Politécnica de Madrid"
   category: thesis
-  type: "supervised"
-  description: "Accesit awarded to a supervised PhD student in International cooperation for sustainable Human Development."
+  type: "own"
+  description: "Proposed for the Master's Thesis Honours Distinction for the Master's Thesis entitled 'Design and Implementation of Variational Autoencoders for Multimodal Survival Analysis in Medical Data.'"
 
-- name: "Best Master's Thesis — General Engineer D. Antonio Remón y Zarco del Valle Award (student)"
-  short_name: "Best Master's Thesis (supervised)"
-  result: winner
-  year: 2019
-  awarded_by: "Cátedra CESEDEN-UPM"
-  category: thesis
-  type: "supervised"
-  description: "First prize awarded to a supervised Master's student in the Ramón y Zarco del Valle national awards."
+ 

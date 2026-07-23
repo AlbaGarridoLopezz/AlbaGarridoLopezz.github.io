@@ -335,8 +335,7 @@ author_profile: true
     <span class="metric-label">Awards</span>
   </div>
 </div>
-
-```html
+ 
 <!-- ── Summary ──────────────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
@@ -373,10 +372,7 @@ author_profile: true
     <span class="badge badge-area">Causal Inference</span>
   </div>
 </div>
-```
-
-
-```html
+ 
 <!-- ── Education ────────────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
@@ -491,8 +487,7 @@ author_profile: true
 
   </div>
 </div>
-```
-```html
+ 
 <!-- ── Work Experience ──────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
@@ -716,7 +711,7 @@ author_profile: true
 <!-- ── Awards ────────────────────────────────────────────────── -->
 <div class="cv-section">
   <div class="cv-section-header">
-    <span class="cv-section-title">Awards &amp; Distinctions</span>
+    <span class="cv-section-title">Awards & Distinctions</span>
     <div class="cv-section-line"></div>
   </div>
 
@@ -746,9 +741,7 @@ author_profile: true
       {% endfor %}
     </div>
   </div>
-   
-  </div>
-
+    
 </div>
 
 </div><!-- /.cv-page -->
