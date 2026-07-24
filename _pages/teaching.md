@@ -9,10 +9,6 @@ author_profile: true
 {% assign active_courses  = all_courses | where: "active", true %}
 {% assign past_courses    = all_courses | where: "active", false %}
 {% assign grad_courses    = all_courses | where: "level", "graduate" %}
-{% assign all_theses      = site.data.theses %}
-{% assign phd_theses      = all_theses  | where: "type", "phd" %}
-{% assign master_theses   = all_theses  | where: "type", "master" %}
-{% assign bachelor_theses = all_theses  | where: "type", "bachelor" %}
 
 <style>
 .teach-page * { box-sizing: border-box; }
@@ -205,18 +201,6 @@ author_profile: true
     <span class="metric-number">{{ active_courses | size }}</span>
     <span class="metric-label">Active courses</span>
   </div>
-  <div class="metric-item">
-    <span class="metric-number">{{ phd_theses | size }}</span>
-    <span class="metric-label">PhD Theses</span>
-  </div>
-  <div class="metric-item">
-    <span class="metric-number">{{ master_theses | size }}</span>
-    <span class="metric-label">Master's Theses</span>
-  </div>
-  <div class="metric-item">
-    <span class="metric-number">{{ bachelor_theses | size }}</span>
-    <span class="metric-label">Bachelor's Theses</span>
-  </div>
 </div>
 
 <!-- ── Courses ── -->
@@ -271,128 +255,6 @@ author_profile: true
     </div>
     {% endfor %}
   </div>
-</div>
-
-<!-- ── PhD Theses ── -->
-<div class="teach-section">
-  <div class="teach-section-header">
-    <span class="teach-section-title">PhD Theses Supervised</span>
-    <div class="teach-section-line"></div>
-  </div>
-
-  <div class="teach-list">
-    {% assign sorted_phd = phd_theses | sort: "year" | reverse %}
-    {% for thesis in sorted_phd %}
-    <div class="teach-card">
-      <div class="teach-year">{{ thesis.year }}</div>
-      <div>
-        <p class="teach-title">
-          {% if thesis.url %}<a href="{{ thesis.url }}" target="_blank" rel="noopener">{{ thesis.title }}</a>
-          {% else %}{{ thesis.title }}{% endif %}
-        </p>
-        <p class="teach-sub">{{ thesis.student }}</p>
-        {% if thesis.co-supervised %}
-        <p class="teach-detail">Co-supervised with {{ thesis.co-supervised }}</p>
-        {% endif %}
-        <div class="badge-row">
-          <span class="badge badge-phd">PhD</span>
-          {% if thesis.note %}<span class="badge badge-note">{{ thesis.note }}</span>{% endif %}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<!-- ── Master's & Bachelor's Theses (stats only) ── -->
-<div class="teach-section">
-  <div class="teach-section-header">
-    <span class="teach-section-title">Master's &amp; Bachelor's Theses</span>
-    <div class="teach-section-line"></div>
-  </div>
-
-  {% assign led_to_pub_m = 0 %}
-  {% for t in master_theses %}{% if t.led_to_pub %}{% assign led_to_pub_m = led_to_pub_m | plus: 1 %}{% endif %}{% endfor %}
-  {% assign noted_m = 0 %}
-  {% for t in master_theses %}{% if t.note %}{% assign noted_m = noted_m | plus: 1 %}{% endif %}{% endfor %}
-
-  <p class="subsection-label" style="margin-bottom: 0.8rem;">Master's Theses — {{ master_theses | size }} supervised</p>
-  <div class="thesis-stats" style="margin-bottom: 1.4rem;">
-    <div class="thesis-stats-cell">
-      <span class="thesis-stats-number">{{ master_theses | size }}</span>
-      <span class="thesis-stats-label">Total</span>
-    </div>
-    <div class="thesis-stats-cell">
-      <span class="thesis-stats-number">{{ led_to_pub_m }}</span>
-      <span class="thesis-stats-label">Led to publication</span>
-    </div>
-    <div class="thesis-stats-cell">
-      <span class="thesis-stats-number">{{ noted_m }}</span>
-      <span class="thesis-stats-label">Awarded</span>
-    </div>
-  </div>
-
-  <div class="teach-list" style="margin-bottom: 1.8rem;">
-    {% assign sorted_master = master_theses | sort: "year" | reverse %}
-    {% for thesis in sorted_master %}
-    <div class="teach-card">
-      <div class="teach-year">{{ thesis.year }}</div>
-      <div>
-        <p class="teach-title">
-          {% if thesis.url %}<a href="{{ thesis.url }}" target="_blank" rel="noopener">{{ thesis.title }}</a>
-          {% else %}{{ thesis.title }}{% endif %}
-        </p>
-        <div class="badge-row">
-          <span class="badge badge-grad">Master</span>
-          {% if thesis.led_to_pub %}<span class="badge badge-active">Led to publication</span>{% endif %}
-          {% if thesis.note %}<span class="badge badge-note">{{ thesis.note }}</span>{% endif %}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  {% assign led_to_pub_b = 0 %}
-  {% for t in bachelor_theses %}{% if t.led_to_pub %}{% assign led_to_pub_b = led_to_pub_b | plus: 1 %}{% endif %}{% endfor %}
-
-  <p class="subsection-label" style="margin-bottom: 0.8rem;">Bachelor's Theses — {{ bachelor_theses | size }} supervised</p>
-  <div class="thesis-stats">
-    <div class="thesis-stats-cell">
-      <span class="thesis-stats-number">{{ bachelor_theses | size }}</span>
-      <span class="thesis-stats-label">Total</span>
-    </div>
-    <div class="thesis-stats-cell">
-      <span class="thesis-stats-number">{{ led_to_pub_b }}</span>
-      <span class="thesis-stats-label">Led to publication</span>
-    </div>
-    <div class="thesis-stats-cell">
-      {% assign noted_b = 0 %}
-      {% for t in bachelor_theses %}{% if t.note %}{% assign noted_b = noted_b | plus: 1 %}{% endif %}{% endfor %}
-      <span class="thesis-stats-number">{{ noted_b }}</span>
-      <span class="thesis-stats-label">Awarded</span>
-    </div>
-  </div>
-
-  <div class="teach-list">
-    {% assign sorted_bachelor = bachelor_theses | sort: "year" | reverse %}
-    {% for thesis in sorted_bachelor %}
-    <div class="teach-card">
-      <div class="teach-year">{{ thesis.year }}</div>
-      <div>
-        <p class="teach-title">
-          {% if thesis.url %}<a href="{{ thesis.url }}" target="_blank" rel="noopener">{{ thesis.title }}</a>
-          {% else %}{{ thesis.title }}{% endif %}
-        </p>
-        <div class="badge-row">
-          <span class="badge badge-undergrad">Bachelor</span>
-          {% if thesis.led_to_pub %}<span class="badge badge-active">Led to publication</span>{% endif %}
-          {% if thesis.note %}<span class="badge badge-note">{{ thesis.note }}</span>{% endif %}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
 </div>
 
 </div><!-- /.teach-page -->
